@@ -27,7 +27,7 @@ def KruskalMST(graph, v, inv_dict):
 
     parent = [] ; rank = []
 
-    # create v sulbsets with single elements
+    # create v subsets with single elements
     for node in range(v):
         parent.append(node)
         rank.append(0)

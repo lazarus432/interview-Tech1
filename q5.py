@@ -27,6 +27,6 @@ a.next = b
 b.next = c
 
 
-print question5(a, 3)
-print question5(b, 2)
-print question5(c, 1)
+print question5(a, 3) # result 3
+#print question5(b, 2) # result 6
+#print question5(c, 1) # result 9

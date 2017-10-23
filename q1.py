@@ -5,6 +5,7 @@ def is_anagram(s1, s2):
 
 def question1(s,t):
     for i in range(len(s) - len(t) + 1):
+    	# helper function which checks for t in s
         if is_anagram(s[i: i + len(t)], t):
             return True
     return False

@@ -57,6 +57,8 @@ def KruskalMST(graph, v, inv_dict):
         else:
             final_result[inv_dict[u]] = final_result[inv_dict[u]].append(temp)
 
+    return final_result
+
 def question3(g):
     temp = {}
     inv_dict = {}
@@ -86,15 +88,11 @@ g2 = {'A': [('B', 5)],
       'C': [('B', 1), ('D', 2)],
       'D': [('C', 2)]}
 
-g3 = {'A': [('B', 1)],
-      'B': [('A', 1), ('C', 3)],
-      'C': [('B', 3), ('D', 4)],
-      'D': [('C', 4)]}
+g3 = {}
 
-
-#print question3(g1)
-#print question3(g2)
-#print question3(g3)
+print question3(g1) # Result {'C' : [('D', 2)]}
+#print question3(g2) # Result {'C' : [('B', 1)]}
+#print question3(g3) # Result {}
 
 
     
